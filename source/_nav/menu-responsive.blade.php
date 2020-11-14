@@ -2,24 +2,24 @@
     <ul class="my-0">
         <li class="pl-4">
             <a
-                title="{{ $page->siteName }} Blog"
-                href="/blog"
-                class="nav-menu__item hover:text-blue-500 {{ $page->isActive('/blog') ? 'active text-blue' : '' }}"
-            >Blog</a>
+                    title="{{ $page->siteName }} Twitter"
+                    href="https://twitter.com/laravelphp_de"
+                    class="nav-menu__item hover:text-blue-500"
+            >Twitter</a>
         </li>
         <li class="pl-4">
             <a
-                title="{{ $page->siteName }} About"
-                href="/about"
-                class="nav-menu__item hover:text-blue-500 {{ $page->isActive('/about') ? 'active text-blue' : '' }}"
-            >About</a>
+                    title="{{ $page->siteName }} Discord"
+                    href="https://discord.gg/sggQqGm3BC"
+                    class="nav-menu__item hover:text-blue-500"
+            >Discord</a>
         </li>
         <li class="pl-4">
             <a
-                title="{{ $page->siteName }} Contact"
-                href="/contact"
-                class="nav-menu__item hover:text-blue-500 {{ $page->isActive('/contact') ? 'active text-blue' : '' }}"
-            >Contact</a>
+                    title="{{ $page->siteName }} Forum"
+                    href="https://laraboard.io/"
+                    class="nav-menu__item hover:text-blue-500"
+            >Forum</a>
         </li>
     </ul>
 </nav>
