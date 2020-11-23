@@ -33,6 +33,16 @@ return [
             'title' => 'Köln',
             'url' => 'https://www.meetup.com/de-DE/Laravel-Cologne/',
             'members' => 152
+        ],
+        [
+            'title' => 'Nürnberg',
+            'url' => 'https://www.meetup.com/de-DE/Laravel-Usergroup-Nurnberg/',
+            'members' => 45
+        ],
+        [
+            'title' => 'Mainfranken',
+            'url' => 'https://www.meetup.com/de-DE/Laravel-Mainfranken/',
+            'members' => 30
         ]
     ],
     // helpers
