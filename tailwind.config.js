@@ -1,3 +1,5 @@
+const colors = require('tailwindcss/colors')
+
 module.exports = {
   purge: {
     content: [
@@ -41,6 +43,11 @@ module.exports = {
       boxShadow: {
         'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',
       }
+    },
+    colors: {
+      ...colors,
+      gray: colors.warmGray,
+      transparent:'transparent'
     },
     fontSize: {
       'xs': '.8rem',
