@@ -17,7 +17,7 @@
     <link rel="icon" href="/favicon.ico">
     <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-    @if ($page->production)
+@if ($page->production)
     <!-- Insert analytics code here -->
     @endif
 
@@ -47,23 +47,28 @@
 
 @include('_nav.menu-responsive')
 
-<main role="main" class="flex-auto w-full container max-w-4xl mx-auto">
-    <div class="rounded bg-white px-8 py-12">
-        @yield('body')
-    </div>
-</main>
+<div class="container max-w-4xl mx-auto">
+    <main class="flex-auto w-full" role="main">
+        <div class="rounded bg-white px-8 py-12">
+            @yield('body')
+        </div>
+    </main>
 
-<footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
-    <ul class="flex flex-col md:flex-row justify-center list-none">
-        <li class="md:mr-2">
-           Webseite wird betrieben von <a href="https://www.rabe.pro/" class="text-gray-600" rel="author">Marvin Rabe</a>.
-        </li>
+    <footer class="text-center text-sm py-4 px-8" role="contentinfo">
+        <ul class="flex flex-col md:flex-row justify-center md:justify-between gap-4 list-none">
+            <li>
+                Webseite wird betrieben von
+                <a href="https://www.rabe.pro/" class="text-gray-600" target="_blank" rel="author">Marvin Rabe</a>.
+            </li>
 
-        <li>
-           Fehlt etwas? <a href="https://github.com/marvinrabe/laravelphp.de" target="_blank" rel="noopener">Erstelle ein Pull Request</a>.
-        </li>
-    </ul>
-</footer>
+            <li>
+                Fehlt etwas?
+                <a href="https://github.com/marvinrabe/laravelphp.de" class="text-gray-600" target="_blank"
+                   rel="noopener">Erstelle ein Pull Request</a>.
+            </li>
+        </ul>
+    </footer>
+</div>
 
 @stack('scripts')
 </body>
