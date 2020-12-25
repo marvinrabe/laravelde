@@ -15,10 +15,9 @@
 
     <link rel="home" href="{{ $page->baseUrl }}">
     <link rel="icon" href="/favicon.ico">
-    <link href="/blog/feed.atom" type="application/atom+xml" rel="alternate" title="{{ $page->siteName }} Atom Feed">
 
-@if ($page->production)
-    <!-- Insert analytics code here -->
+    @if ($page->production)
+    <script async defer data-domain="laravelphp.de" src="https://stats.laravelphp.de/js/index.js"></script>
     @endif
 
     <link href="https://fonts.googleapis.com/css?family=Nunito+Sans:300,300i,400,400i,700,700i,800,800i"
