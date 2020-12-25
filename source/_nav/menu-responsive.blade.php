@@ -9,6 +9,13 @@
         </li>
         <li class="pl-4">
             <a
+                    title="{{ $page->siteName }} Telegram"
+                    href="https://t.me/laraveldeutschland"
+                    class="nav-menu__item hover:text-blue-500"
+            >Telegram</a>
+        </li>
+        <li class="pl-4">
+            <a
                     title="{{ $page->siteName }} Discord"
                     href="https://discord.gg/sggQqGm3BC"
                     class="nav-menu__item hover:text-blue-500"

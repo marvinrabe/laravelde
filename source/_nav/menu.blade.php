@@ -4,8 +4,13 @@
         Twitter
     </a>
 
+    <a title="{{ $page->siteName }} Telegram" href="https://t.me/laraveldeutschland"
+       class="ml-6 text-gray-700 hover:text-blue-600">
+        Telegram
+    </a>
+
     <a title="{{ $page->siteName }} Discord" href="https://discord.gg/sggQqGm3BC"
-        class="ml-6 text-gray-700 hover:text-blue-600">
+       class="ml-6 text-gray-700 hover:text-blue-600">
         Discord
     </a>
 
