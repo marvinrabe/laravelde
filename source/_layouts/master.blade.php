@@ -53,22 +53,17 @@
     </div>
 </main>
 
-<p class="text-xs text-center text-gray-600 m-4">
-    Webseite wird betrieben von <a href="https://www.rabe.pro/" class="text-gray-600" rel="author">Marvin Rabe</a>.
-</p>
-
-{{-- <footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
+<footer class="bg-white text-center text-sm mt-12 py-4" role="contentinfo">
     <ul class="flex flex-col md:flex-row justify-center list-none">
         <li class="md:mr-2">
-            &copy; <a href="https://tighten.co" title="Tighten website">Tighten</a> {{ date('Y') }}.
+           Webseite wird betrieben von <a href="https://www.rabe.pro/" class="text-gray-600" rel="author">Marvin Rabe</a>.
         </li>
 
         <li>
-            Built with <a href="http://jigsaw.tighten.co" title="Jigsaw by Tighten">Jigsaw</a>
-            and <a href="https://tailwindcss.com" title="Tailwind CSS, a utility-first CSS framework">Tailwind CSS</a>.
+           Fehlt etwas? <a href="https://github.com/marvinrabe/laravelphp.de" target="_blank" rel="noopener">Erstelle ein Pull Request</a>.
         </li>
     </ul>
-</footer>--}}
+</footer>
 
 @stack('scripts')
 </body>
