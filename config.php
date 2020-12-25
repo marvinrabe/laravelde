@@ -5,8 +5,8 @@ use Illuminate\Support\Str;
 return [
     'baseUrl' => '',
     'production' => false,
-    'siteName' => 'Laravel DE',
-    'siteDescription' => 'Inoffizielle Laravel Deutschland Community Seite',
+    'siteName' => 'Laravel DACH',
+    'siteDescription' => 'Inoffizielle deutschsprachige Laravel Community Seite',
     'siteAuthor' => 'Marvin Rabe',
     'userGroups' => [
         [
