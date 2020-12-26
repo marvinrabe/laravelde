@@ -6,7 +6,7 @@ return [
     'baseUrl' => '',
     'production' => false,
     'siteName' => 'Laravel DACH',
-    'siteDescription' => 'Inoffizielle deutschsprachige Laravel Community Seite',
+    'siteDescription' => 'Deutschsprachige Laravel Community',
     'siteAuthor' => 'Marvin Rabe',
     'navigation' => [
         [
