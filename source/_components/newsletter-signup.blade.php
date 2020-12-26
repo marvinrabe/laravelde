@@ -11,7 +11,7 @@
                 </div>
                 <div class="flex mb-4">
                     <div class="mc-field-group flex-1">
-                        <label for="mce-EMAIL" class="hidden">E-Mail Adresse</label>
+                        <label for="mce-EMAIL" class="sr-only">E-Mail Adresse</label>
                         <input type="email" value="" name="EMAIL" class="required email" id="mce-EMAIL" placeholder="E-Mail Adresse">
                     </div>
                     <input type="submit" value="Anmelden" name="subscribe" id="mc-embedded-subscribe" class="button">
