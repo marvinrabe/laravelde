@@ -57,7 +57,7 @@
         <ul class="flex flex-col md:flex-row justify-center md:justify-between gap-4 list-none">
             <li>
                 Webseite wird betrieben von
-                <a href="https://www.rabe.pro/" class="text-gray-600" target="_blank" rel="author">Marvin Rabe</a>.
+                <a href="https://www.rabe.pro/" class="text-gray-600" target="_blank" rel="author noopener">Marvin Rabe</a>.
             </li>
 
             <li>
