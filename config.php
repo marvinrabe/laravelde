@@ -8,7 +8,33 @@ return [
     'siteName' => 'Laravel DACH',
     'siteDescription' => 'Inoffizielle deutschsprachige Laravel Community Seite',
     'siteAuthor' => 'Marvin Rabe',
-    'userGroups' => [
+    'navigation' => [
+        [
+            'title' => 'Forum',
+            'url' => 'https://laraboard.io/'
+        ]
+    ],
+    'social' => [
+        [
+            'icon' => 'twitter',
+            'color' => '#1DA1F2',
+            'title' => 'Twitter',
+            'url' => 'https://twitter.com/laravelphp_de'
+        ],
+        [
+            'icon' => 'telegram',
+            'color' => '#2CA5E0',
+            'title' => 'Telegram',
+            'url' => 'https://t.me/laraveldeutschland'
+        ],
+        [
+            'icon' => 'discord',
+            'color' => '#7289DA',
+            'title' => 'Discord',
+            'url' => 'https://discord.gg/sggQqGm3BC'
+        ]
+    ],
+    'userGroupsDe' => [
         [
             'title' => 'Berlin',
             'url' => 'https://www.meetup.com/de-DE/laravel-berlin/',
@@ -45,6 +71,38 @@ return [
             'members' => 30
         ]
     ],
+
+    'userGroupsAt' => [
+        [
+            'title' => 'Wien',
+            'url' => 'https://www.meetup.com/de-DE/Laravel-Frameworkers-Vienna/',
+            'members' => 253
+        ],
+    ],
+
+    'userGroupsCh' => [
+        [
+            'title' => 'Luzern',
+            'url' => 'https://www.meetup.com/de-DE/Laravel-Switzerland/',
+            'members' => 77
+        ],
+        [
+            'title' => 'Lausanne',
+            'url' => 'https://www.meetup.com/de-DE/laravel-artisans/',
+            'members' => 75
+        ],
+        [
+            'title' => 'Basel',
+            'url' => 'https://www.meetup.com/de-DE/laravel-basel/',
+            'members' => 49
+        ],
+        [
+            'title' => 'Bern',
+            'url' => 'https://www.meetup.com/de-DE/laravel-bern/',
+            'members' => 28
+        ]
+    ],
+
     // helpers
     'getDate' => function ($page) {
         return Datetime::createFromFormat('U', $page->date);
@@ -73,7 +131,7 @@ return [
         }
 
         return strlen($cleaned) > $length
-            ? preg_replace('/\s+?(\S+)?$/', '', $truncated).'...'
+            ? preg_replace('/\s+?(\S+)?$/', '', $truncated) . '...'
             : $cleaned;
     },
     'isActive' => function ($page, $path) {
