@@ -12,6 +12,10 @@ return [
         [
             'title' => 'Forum',
             'url' => 'https://laraboard.io/'
+        ],
+        [
+            'title' => 'YouTube',
+            'url' => 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ'
         ]
     ],
     'social' => [
