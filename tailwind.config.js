@@ -38,7 +38,8 @@ module.exports = {
       },
       spacing: {
         '7': '1.75rem',
-        '9': '2.25rem'
+        '9': '2.25rem',
+        '25p': '25%',
       },
       boxShadow: {
         'lg': '0 -1px 27px 0 rgba(0, 0, 0, 0.04), 0 4px 15px 0 rgba(0, 0, 0, 0.08)',

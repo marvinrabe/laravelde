@@ -5,10 +5,10 @@ body {
 a {
     @apply font-semibold;
     @apply no-underline;
-    @apply text-blue-600;
+    @apply text-indigo-600;
 
     &:hover {
-        @apply text-blue-800;
+        @apply text-indigo-800;
     }
 }
 
@@ -40,7 +40,7 @@ h6 {
     @apply leading-tight;
     @apply mb-4;
     @apply mt-8;
-    @apply text-gray-900;
+    @apply text-blueGray-900;
 
     &:first-child {
         @apply mt-0;
@@ -131,6 +131,27 @@ pre {
 }
 
 ::selection {
-    @apply bg-blue-500;
+    @apply bg-indigo-500;
     @apply text-white;
+}
+
+.button, button, input[type="submit"] {
+    @apply block;
+    @apply px-4;
+    @apply py-2;
+    @apply border;
+    @apply border-indigo-500;
+    @apply text-base;
+    @apply leading-6;
+    @apply font-medium;
+    @apply rounded-md;
+    @apply text-white;
+    @apply bg-indigo-500;
+    @apply hover:bg-indigo-600;
+    @apply hover:text-white;
+    @apply focus:outline-none;
+    @apply focus:ring-indigo-600;
+    @apply md:py-3;
+    @apply md:text-lg;
+    @apply md:px-6;
 }

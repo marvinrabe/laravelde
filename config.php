@@ -1,5 +1,6 @@
 <?php
 
+use Carbon\Carbon;
 use Illuminate\Support\Str;
 
 return [
@@ -38,72 +39,140 @@ return [
             'url' => 'https://discord.gg/sggQqGm3BC'
         ]
     ],
-    'userGroupsDe' => [
-        [
-            'title' => 'Berlin',
-            'url' => 'https://www.meetup.com/de-DE/laravel-berlin/',
-            'members' => 536
+    'upcomingOnlineMeetup' => [
+        'date' => Carbon::parse('2021-02-01 20:00:00+0100'),
+        'youtubeUrl' => 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ',
+        'calendarBase64' => '',
+        'talks' => [
+            [
+                'title' => 'How to Fachbuch',
+                'description' => '',
+                'speaker' => [
+                    'firstName' => 'Lars',
+                    'lastName' => 'Peterke',
+                    'shortBio' => '',
+                    'avatarUrl' => 'https://pbs.twimg.com/profile_images/1073168355505385472/WJu6Gnh0_400x400.jpg',
+                ],
+            ],
+            [
+                'title' => 'Wie bereite ich einen Tech-Talk vor?',
+                'description' => '',
+                'speaker' => [
+                    'firstName' => 'Marvin',
+                    'lastName' => 'Rabe',
+                    'shortBio' => '',
+                    'avatarUrl' => 'https://pbs.twimg.com/profile_images/1327300108132769795/2Y_cMV1L_400x400.jpg',
+                ],
+            ],
+            [
+                'title' => 'Drag & Drop Workflow Package',
+                'description' => '',
+                'speaker' => [
+                    'firstName' => 'Max',
+                    'lastName' => 'Hutschenreiter',
+                    'shortBio' => '',
+                    'avatarUrl' => 'https://pbs.twimg.com/profile_images/583617993160192000/DqPq8zKp_400x400.jpg',
+                ],
+            ],
         ],
-        [
-            'title' => 'München',
-            'url' => 'https://www.meetup.com/de-DE/laravel-munich/',
-            'members' => 467
-        ],
-        [
-            'title' => 'Hamburg',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Hamburg/',
-            'members' => 328
-        ],
-        [
-            'title' => 'Rhein-Main',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Meetup-Rhein-Main/',
-            'members' => 223
-        ],
-        [
-            'title' => 'Köln',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Cologne/',
-            'members' => 152
-        ],
-        [
-            'title' => 'Nürnberg',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Usergroup-Nurnberg/',
-            'members' => 45
-        ],
-        [
-            'title' => 'Mainfranken',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Mainfranken/',
-            'members' => 30
-        ]
+        'sparks' => [],
     ],
-
-    'userGroupsAt' => [
+    'pastOnlineMeetups' => [
         [
-            'title' => 'Wien',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Frameworkers-Vienna/',
-            'members' => 253
+            'date' => Carbon::parse('2021-01-04 20:00:00+0100'),
+            'youtubeUrl' => '',
+            'talks' => [
+                [
+                    'title' => 'Laravel Enlighten',
+                    'description' => '',
+                    'speaker' => [
+                        'firstName' => 'Johannes',
+                        'lastName' => 'Ahrndt',
+                        'shortBio' => '',
+                        'avatarUrl' => '',
+                    ],
+                ]
+            ],
+            'sparks' => [
+                [
+                    'title' => 'Laravel Enlighten',
+                    'description' => '',
+                    'speaker' => [
+                        'firstName' => 'Johannes',
+                        'lastName' => 'Ahrndt',
+                        'shortBio' => '',
+                        'avatarUrl' => '',
+                    ],
+                ]
+            ],
         ],
     ],
-
-    'userGroupsCh' => [
-        [
-            'title' => 'Luzern',
-            'url' => 'https://www.meetup.com/de-DE/Laravel-Switzerland/',
-            'members' => 77
+    'localMeetups' => [
+        'de' => [
+            [
+                'title' => 'Berlin',
+                'url' => 'https://www.meetup.com/de-DE/laravel-berlin/',
+                'members' => 539
+            ],
+            [
+                'title' => 'München',
+                'url' => 'https://www.meetup.com/de-DE/laravel-munich/',
+                'members' => 478
+            ],
+            [
+                'title' => 'Hamburg',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Hamburg/',
+                'members' => 328
+            ],
+            [
+                'title' => 'Rhein-Main',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Meetup-Rhein-Main/',
+                'members' => 223
+            ],
+            [
+                'title' => 'Köln',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Cologne/',
+                'members' => 152
+            ],
+            [
+                'title' => 'Nürnberg',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Usergroup-Nurnberg/',
+                'members' => 45
+            ],
+            [
+                'title' => 'Mainfranken',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Mainfranken/',
+                'members' => 30
+            ]
         ],
-        [
-            'title' => 'Lausanne',
-            'url' => 'https://www.meetup.com/de-DE/laravel-artisans/',
-            'members' => 75
+        'at' => [
+            [
+                'title' => 'Wien',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Frameworkers-Vienna/',
+                'members' => 253
+            ],
         ],
-        [
-            'title' => 'Basel',
-            'url' => 'https://www.meetup.com/de-DE/laravel-basel/',
-            'members' => 49
-        ],
-        [
-            'title' => 'Bern',
-            'url' => 'https://www.meetup.com/de-DE/laravel-bern/',
-            'members' => 28
+        'ch' => [
+            [
+                'title' => 'Luzern',
+                'url' => 'https://www.meetup.com/de-DE/Laravel-Switzerland/',
+                'members' => 77
+            ],
+            [
+                'title' => 'Lausanne',
+                'url' => 'https://www.meetup.com/de-DE/laravel-artisans/',
+                'members' => 75
+            ],
+            [
+                'title' => 'Basel',
+                'url' => 'https://www.meetup.com/de-DE/laravel-basel/',
+                'members' => 49
+            ],
+            [
+                'title' => 'Bern',
+                'url' => 'https://www.meetup.com/de-DE/laravel-bern/',
+                'members' => 28
+            ]
         ]
     ],
 
