@@ -40,10 +40,17 @@ return [
         ]
     ],
     'upcomingOnlineMeetup' => [
-        'date' => Carbon::parse('2021-02-01 20:00:00+0100'),
+        'date' => Carbon::parse('2021-03-01 20:00:00+0100'),
         'youtubeUrl' => 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ',
         'calendarBase64' => '',
-        'talks' => [
+        'talks' => [],
+        'sparks' => [],
+    ],
+    'pastOnlineMeetups' => [
+        [
+            'date' => Carbon::parse('2021-02-01 20:00:00+0100'),
+            'youtubeUrl' => '',
+            'talks' => [
             [
                 'title' => 'How to Fachbuch',
                 'description' => '',
@@ -74,10 +81,9 @@ return [
                     'avatarUrl' => 'https://pbs.twimg.com/profile_images/583617993160192000/DqPq8zKp_400x400.jpg',
                 ],
             ],
+            ],
+            'sparks' => [],
         ],
-        'sparks' => [],
-    ],
-    'pastOnlineMeetups' => [
         [
             'date' => Carbon::parse('2021-01-04 20:00:00+0100'),
             'youtubeUrl' => '',
