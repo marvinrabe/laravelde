@@ -66,6 +66,10 @@
                    rel="noopener">Erstelle ein Pull Request</a>.
             </li>
         </ul>
+        <div class="flex flex-col justify-center">
+            <span>LaravelPHP.de sowie die Meetup Server werden gesponsert von</span>
+            <img src="/assets/img/hetzner-logo.svg" alt="Hetzner Online GmbH" class="h-5 mb-1 mt-2">
+        </div>
     </footer>
 </div>
 
