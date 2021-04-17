@@ -1,0 +1,134 @@
+a {
+  @apply font-semibold;
+  @apply no-underline;
+  @apply text-indigo-600;
+}
+
+a:hover {
+  @apply text-indigo-800;
+}
+
+blockquote {
+  @apply border-blue-400;
+  @apply border-l-4;
+  @apply font-normal;
+  @apply italic;
+  @apply my-8;
+  @apply pl-6;
+  @apply text-gray-800;
+  @apply text-lg;
+}
+
+code {
+  @apply bg-gray-300;
+  @apply px-2;
+  @apply py-px;
+  @apply rounded;
+  @apply text-sm;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  @apply leading-tight;
+  @apply mb-4;
+  @apply mt-8;
+  @apply text-blueGray-900;
+
+  &:first-child {
+    @apply mt-0;
+  }
+}
+
+h1 {
+  @apply font-extrabold;
+  @apply text-5xl;
+}
+
+h2 {
+  @apply font-bold;
+  @apply text-4xl;
+}
+
+h3 {
+  @apply font-bold;
+  @apply text-3xl;
+}
+
+h4 {
+  @apply font-normal;
+  @apply text-2xl;
+}
+
+h5 {
+  @apply font-normal;
+  @apply text-xl;
+}
+
+h6 {
+  @apply font-light;
+  @apply text-lg;
+}
+
+hr {
+  @apply border-b;
+  @apply border-gray-200;
+  @apply my-12;
+  @apply rounded-full;
+}
+
+li ul,
+li ol {
+  @apply my-0;
+  @apply ml-8;
+}
+
+ol,
+ul {
+  @apply my-4;
+}
+
+ol {
+  @apply list-decimal;
+}
+
+ul {
+  @apply list-disc;
+}
+
+p {
+  @apply my-3;
+
+  @screen md {
+    @apply my-6;
+  }
+}
+
+::selection {
+  @apply bg-indigo-500;
+  @apply text-white;
+}
+
+.button, button, input[type="submit"] {
+  @apply block;
+  @apply px-4;
+  @apply py-2;
+  @apply border;
+  @apply border-indigo-500;
+  @apply text-base;
+  @apply leading-6;
+  @apply font-medium;
+  @apply rounded-md;
+  @apply text-white;
+  @apply bg-indigo-500;
+  @apply hover:bg-indigo-600;
+  @apply hover:text-white;
+  @apply focus:outline-none;
+  @apply focus:ring-indigo-600;
+  @apply md:py-3;
+  @apply md:text-lg;
+  @apply md:px-6;
+}
