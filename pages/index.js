@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import NewsletterForm from '../components/NewsletterForm'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { upcomingMeetup, socialLinks, meetupsGermany, meetupsAustria, meetupsSwitzerland } from '../config.tsx'
 import MeetupSection from '../components/MeetupSection'
 
@@ -24,9 +24,9 @@ export default function Home () {
             <h2 className="text-4xl">Hallo, 👋</h2>
             <p className="text-xl">
               dies ist die{' '}<strong>deutschsprachige</strong>{' '}Community für alle{' '}<strong>Laravel</strong>
-              {' '}Entwickler. Ganz egal ob Anfänger oder Experte, du bist herzlich willkommen. Wir machen regelmäßige
-              {' '}<strong>Online-Meetups</strong>: sei dabei, teile dein Wissen und chatte mit anderen Laravel
-              Entwicklern.
+              {' '}Entwickler. Ganz egal ob Anfänger oder Experte, du bist herzlich willkommen. Wir veranstalten
+              regelmäßige{' '}<strong>Online-Meetups</strong>. Sei dabei, teile dein Wissen und chatte mit anderen
+              Laravel Entwicklern.
             </p>
 
             <div
@@ -67,10 +67,10 @@ export default function Home () {
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {socialLinks.map((platform, index) => (
                 <a key={index} href={platform.url} rel="noopener"
-                   className="block p-4 rounded text-white hover:text-white hover:opacity-90 flex items-center"
+                   className="p-4 rounded text-white hover:text-white hover:opacity-90 flex items-center "
                    style={{ background: platform.color }}>
-                  <img src={`/img/social/${platform.icon}.svg`} className="mr-4 h-6" alt=""/>
-                  <span className="block font-bold">
+                  <FontAwesomeIcon icon={platform.icon} fixedWidth className="text-2xl"/>
+                  <span className="ml-2 font-bold leading-tight">
                     {platform.title}
                   </span>
                 </a>
@@ -88,22 +88,23 @@ export default function Home () {
           </div>
         </main>
 
-        <footer className="pb-12 pt-6 px-6 text-gray-500 text-sm" role="contentinfo">
+        <footer className="pb-12 pt-6 px-6 text-gray-500 text-sm leading-loose" role="contentinfo">
           <div
             className="flex flex-col md:flex-row items-center justify-center md:justify-between gap-4">
-            <div className="text-center md:text-left leading-loose">
+            <div className="text-center md:text-left">
               <span>Webseite wird betrieben von </span>
-              <a href="https://www.rabe.pro/" className="text-gray-600" target="_blank" rel="author noopener">
+              <a href="https://www.rabe.pro/" className="text-gray-600" rel="author noopener">
                 Marvin Rabe
               </a>.<br/>
               <span>Fehlt etwas? </span>
-              <a href="https://github.com/marvinrabe/laravelphp.de" className="text-gray-600" target="_blank"
-                 rel="noopener">Erstelle ein Pull Request</a>.
+              <a href="https://github.com/marvinrabe/laravelphp.de" className="text-gray-600" rel="noopener">
+                Erstelle ein Pull Request
+              </a>.
             </div>
 
             <div className="text-center md:text-right">
               <span>Der Meetup Server wird gesponsert von </span><br/>
-              <img src="/img/hetzner-logo.svg" alt="Hetzner Online GmbH" className="inline-block md:ml-auto mt-2 h-5"/>
+              <img src="/img/hetzner-logo.svg" alt="Hetzner Online GmbH" className="inline-block md:ml-auto h-4"/>
             </div>
           </div>
         </footer>

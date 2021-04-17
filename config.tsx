@@ -1,3 +1,5 @@
+import { faTwitter, faTelegramPlane, faDiscord } from '@fortawesome/free-brands-svg-icons'
+
 export const upcomingMeetup = {
     date: new Date('2021-05-03T20:00:00'),
     url: 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ',
@@ -6,19 +8,19 @@ export const upcomingMeetup = {
 
 export const socialLinks = [
     {
-        icon: 'twitter',
+        icon: faTwitter,
         color: '#1DA1F2',
         title: 'Twitter',
         url: 'https://twitter.com/laravelphp_de'
     },
     {
-        icon: 'telegram',
+        icon: faTelegramPlane,
         color: '#2CA5E0',
         title: 'Telegram',
         url: 'https://t.me/laraveldeutschland'
     },
     {
-        icon: 'discord',
+        icon: faDiscord,
         color: '#7289DA',
         title: 'Discord',
         url: 'https://discord.gg/sggQqGm3BC'
