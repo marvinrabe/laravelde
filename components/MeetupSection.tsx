@@ -12,7 +12,7 @@ interface MeetupSectionProps {
 export default function MeetupSection(props: MeetupSectionProps) {
     return (
         <>
-            <h3 className="text-2xl">{props.title}</h3>
+            <h3 className="text-2xl my-6">{props.title}</h3>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
                 {props.meetups.map((meetup, index) => (

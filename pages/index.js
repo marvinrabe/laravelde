@@ -21,7 +21,7 @@ export default function Home () {
       <div className="container max-w-4xl mx-auto">
         <main className="flex-auto w-full" role="main">
           <div className="rounded bg-white px-8 py-12">
-            <h2 className="text-4xl">Hallo, 👋</h2>
+            <h2 className="text-4xl mb-6">Hallo, 👋</h2>
             <p className="text-xl">
               dies ist die{' '}<strong>deutschsprachige</strong>{' '}Community für alle{' '}<strong>Laravel</strong>
               {' '}Entwickler. Ganz egal ob Anfänger oder Experte, du bist herzlich willkommen. Wir veranstalten
@@ -61,8 +61,8 @@ export default function Home () {
               </div>
             </div>
 
-            <h2 className="text-4xl">Social Media</h2>
-            <p className="text-xl">Unterhalte dich mit anderen Entwicklern online.</p>
+            <h2 className="text-4xl mt-6">Social Media</h2>
+            <p className="text-xl text-gray-600 mb-6">Unterhalte dich mit anderen Entwicklern online.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
               {socialLinks.map((platform, index) => (
@@ -77,10 +77,10 @@ export default function Home () {
               ))}
             </div>
 
-            <hr/>
+            <hr className="border-b border-gray-200 my-6 md:my-12 rounded-full"/>
 
-            <h2 className="text-4xl">Lokale Meetups</h2>
-            <p className="text-xl">Laravel Entwickler aus deiner Nähe kennenlernen.</p>
+            <h2 className="text-4xl mt-6">Lokale Meetups</h2>
+            <p className="text-xl text-gray-600 mb-6">Laravel Entwickler aus deiner Nähe kennenlernen.</p>
 
             <MeetupSection title="🇩🇪 Deutschland" meetups={meetupsGermany}/>
             <MeetupSection title="🇦🇹 Österreich" meetups={meetupsAustria}/>

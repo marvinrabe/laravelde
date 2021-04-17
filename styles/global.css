@@ -1,0 +1,54 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  ::selection {
+    @apply bg-indigo-500;
+    @apply text-white;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    @apply font-bold;
+    @apply text-gray-900;
+  }
+
+  a {
+    @apply font-semibold;
+    @apply no-underline;
+    @apply text-indigo-600;
+  }
+
+  a:hover {
+    @apply text-indigo-800;
+  }
+}
+
+
+@layer components {
+  .button {
+    @apply block;
+    @apply px-4;
+    @apply py-2;
+    @apply border;
+    @apply border-indigo-500;
+    @apply text-base;
+    @apply leading-6;
+    @apply font-medium;
+    @apply rounded-md;
+    @apply text-white;
+    @apply bg-indigo-500;
+    @apply hover:bg-indigo-600;
+    @apply hover:text-white;
+    @apply focus:outline-none;
+    @apply focus:ring-indigo-600;
+    @apply md:py-3;
+    @apply md:text-lg;
+    @apply md:px-6;
+  }
+}
