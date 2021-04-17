@@ -61,7 +61,7 @@ export default function Home () {
               </div>
             </div>
 
-            <h2 className="text-4xl mt-6">Social Media</h2>
+            <h2 className="text-3xl mt-6 mb-2">Social Media</h2>
             <p className="text-xl text-gray-600 mb-6">Unterhalte dich mit anderen Entwicklern online.</p>
 
             <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
@@ -79,7 +79,7 @@ export default function Home () {
 
             <hr className="border-b border-gray-200 my-6 md:my-12 rounded-full"/>
 
-            <h2 className="text-4xl mt-6">Lokale Meetups</h2>
+            <h2 className="text-3xl mt-6 mb-2">Lokale Meetups</h2>
             <p className="text-xl text-gray-600 mb-6">Laravel Entwickler aus deiner Nähe kennenlernen.</p>
 
             <MeetupSection title="🇩🇪 Deutschland" meetups={meetupsGermany}/>
