@@ -44,11 +44,6 @@ export const meetupsGermany = [
         members: 328
     },
     {
-        title: 'Rhein-Main',
-        url: 'https://www.meetup.com/de-DE/Laravel-Meetup-Rhein-Main/',
-        members: 223
-    },
-    {
         title: 'Köln',
         url: 'https://www.meetup.com/de-DE/Laravel-Cologne/',
         members: 152
