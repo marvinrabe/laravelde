@@ -1,4 +1,4 @@
-import { faTwitter, faTelegramPlane, faDiscord } from '@fortawesome/free-brands-svg-icons'
+import { faTwitter, faTelegramPlane, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export const upcomingMeetup = {
   date: new Date('2021-05-03T20:00:00'),
@@ -43,6 +43,12 @@ export const socialLinks = [
     color: '#7289DA',
     title: 'Discord',
     url: 'https://discord.gg/sggQqGm3BC'
+  },
+  {
+    icon: faYoutube,
+    color: '#FF0000',
+    title: 'YouTube',
+    url: 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ'
   }
 ]
 

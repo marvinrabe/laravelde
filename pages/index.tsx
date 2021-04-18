@@ -66,7 +66,7 @@ export default function Home () {
           <h2 className="text-3xl mt-6 mb-2">Social Media</h2>
           <p className="text-xl text-gray-600 mb-6">Unterhalte dich mit anderen Entwicklern online.</p>
 
-          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
+          <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-4">
             {socialLinks.map((platform, index) => (
               <a key={index} href={platform.url} rel="noopener"
                  className="p-4 rounded text-white hover:text-white hover:opacity-90 flex items-center "
