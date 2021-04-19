@@ -40,7 +40,7 @@ export default function PastMeetup (props: PastMeetupProps) {
         {talks.map((talk, index) => (
           <div key={index} className="flex items-center my-6">
             <img
-              src={`https://res.cloudinary.com/laravelphpde/image/twitter_name/${talk.twitter}.jpg`}
+              src={`https://res.cloudinary.com/laravelphpde/image/twitter_name/${talk.twitter}`}
               className="rounded-full shadow-lg h-12 w-12 outline-none flex-shrink-0"
             />
             <div className="ml-4 leading-relaxed">
