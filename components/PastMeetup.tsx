@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faYoutube } from '@fortawesome/free-brands-svg-icons'
 
@@ -40,11 +39,9 @@ export default function PastMeetup (props: PastMeetupProps) {
       <div className="px-6 py-3">
         {talks.map((talk, index) => (
           <div key={index} className="flex items-center my-6">
-            <Image
+            <img
               src={`https://res.cloudinary.com/laravelphpde/image/twitter_name/${talk.twitter}.jpg`}
               className="rounded-full shadow-lg h-12 w-12 outline-none flex-shrink-0"
-              height={50}
-              width={50}
             />
             <div className="ml-4 leading-relaxed">
               <a href={`https://twitter.com/${talk.twitter}`} className="font-bold" rel="noopener">{talk.name}</a><br/>
