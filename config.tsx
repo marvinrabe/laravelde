@@ -1,12 +1,16 @@
 import { faTwitter, faTelegramPlane, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export const upcomingMeetup = {
-  date: new Date('2021-05-03T20:00:00'),
-  url: 'https://www.youtube.com/watch?v=aYWDHv6nFuQ',
+  date: new Date('2021-06-07T20:00:00'),
+  url: 'https://www.youtube.com/watch?v=D9J5OcqCybw',
   talks: []
 }
 
 export const pastMeetups = [
+  {
+    date: '2021-05-03',
+    url: 'https://www.youtube.com/watch?v=aYWDHv6nFuQ',
+  },
   {
     date: '2021-04-12',
     url: 'https://www.youtube.com/watch?v=jfSzLG3UttA'
