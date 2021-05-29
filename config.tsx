@@ -83,9 +83,19 @@ export const meetupsGermany = [
     members: 45
   },
   {
+    title: 'Bochum',
+    url: 'https://www.meetup.com/de-DE/Laravel-Bochum/',
+    members: 41
+  },
+  {
     title: 'Mainfranken',
     url: 'https://www.meetup.com/de-DE/Laravel-Mainfranken/',
     members: 30
+  },
+  {
+    title: 'Stuttgart',
+    url: 'https://www.meetup.com/de-DE/stuttgart-laravel-group/',
+    members: 2
   }
 ]
 
