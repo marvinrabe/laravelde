@@ -51,7 +51,7 @@ export default function Home () {
               </div>
 
               <div className="mx-auto max-w-xs space-y-2">
-                <a href={upcomingMeetup.url} className="button">Auf YouTube ansehen</a>
+                <a href={upcomingMeetup.url} className="button">Mehr Infos</a>
               </div>
             </div>
 
