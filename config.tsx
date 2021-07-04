@@ -1,8 +1,8 @@
 import { faTwitter, faTelegramPlane, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
 export const upcomingMeetup = {
-  date: new Date('2021-06-07T20:00:00'),
-  url: 'https://www.youtube.com/watch?v=D9J5OcqCybw',
+  date: new Date('2021-07-08T18:30:00'),
+  url: 'https://www.meetup.com/de-DE/laravel-meetup-germany/events/278915028/',
   talks: []
 }
 
