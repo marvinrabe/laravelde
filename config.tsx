@@ -1,7 +1,8 @@
 import { faTwitter, faTelegramPlane, faDiscord, faYoutube } from '@fortawesome/free-brands-svg-icons'
 
+
 export const upcomingMeetup = {
-  date: new Date('2021-08-02T20:00:00'),
+  date: new Date('2021-09-06T20:00:00'),
   url: 'https://www.youtube.com/channel/UCTXsbGt5J7bbTcC_TZcJPqQ',
   talks: []
 }
