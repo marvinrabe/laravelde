@@ -14,7 +14,6 @@ class MyDocument extends Document {
           <link rel="preconnect" href="https://fonts.gstatic.com"/>
           <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600;700;900&display=swap"
                 rel="stylesheet"/>
-          <script async defer data-domain="laravelphp.de" src="https://stats.laravelphp.de/js/index.js"/>
         </Head>
         <body className="bg-gray-100 text-gray-800 leading-normal font-sans">
         <div className="container max-w-4xl mx-auto">
