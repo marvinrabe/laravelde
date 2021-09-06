@@ -36,7 +36,7 @@ export default function Home () {
               </p>
 
               <div className="mx-auto max-w-xs space-y-2">
-                <a href={upcomingMeetup.url || '/meetups'}
+                <a href={upcomingMeetup ? upcomingMeetup.url : '/meetups'}
                    className="button">{upcomingMeetup ? 'Mehr Infos' : 'Vergangene Meetups'}</a>
               </div>
             </div>
