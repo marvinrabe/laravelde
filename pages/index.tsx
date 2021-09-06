@@ -28,7 +28,7 @@ export default function Home () {
 
               <h3 className="text-blueGray-400 text-lg md:text-2xl mb-2">Nächstes Online-Meetup</h3>
 
-              <p className="text-xl md:text-3xl font-bold mt-0">
+              <p className="text-xl md:text-3xl font-bold mt-0 mb-4">
                 {upcomingMeetup ? new Intl.DateTimeFormat('de-DE', {
                   dateStyle: 'full',
                   timeStyle: 'short'
