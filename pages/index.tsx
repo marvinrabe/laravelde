@@ -29,38 +29,24 @@ export default function Home () {
               <h3 className="text-blueGray-400 text-lg md:text-2xl mb-2">Nächstes Online-Meetup</h3>
 
               <p className="text-xl md:text-3xl font-bold mt-0">
-                {new Intl.DateTimeFormat('de-DE', {
+                {upcomingMeetup ? new Intl.DateTimeFormat('de-DE', {
                   dateStyle: 'full',
                   timeStyle: 'short'
-                }).format(upcomingMeetup.date)}
+                }).format(upcomingMeetup.date) : 'Kein Meetup geplant'}
               </p>
 
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-2xl mb-8 mx-auto">
-                {upcomingMeetup.talks.map((talk, index) => (
-                  <div
-                    className="@if ($loop->last) md:col-span-2 md:ml-25p @else md:col-span-1 @endif flex items-center text-left space-x-4 lg:space-x-6">
-                    <img className="w-16 h-16 border-2 border-blueGray-400 rounded-full lg:w-20 lg:h-20"
-                         src={talk.speaker.avatar}
-                         alt={`Avatar von ${talk.speaker.firstName} ${talk.speaker.lastName}`}/>
-                    <div className="font-medium text-lg leading-6 space-y-1">
-                      <p className="text-blueGray-200 m-0">{talk.title}</p>
-                      <p className="text-blueGray-400 m-0">{talk.speaker.firstName} {talk.speaker.lastName}</p>
-                    </div>
-                  </div>
-                ))}
-              </div>
-
               <div className="mx-auto max-w-xs space-y-2">
-                <a href={upcomingMeetup.url} className="button">Mehr Infos</a>
+                <a href={upcomingMeetup.url || '/meetups'}
+                   className="button">{upcomingMeetup ? 'Mehr Infos' : 'Vergangene Meetups'}</a>
               </div>
             </div>
 
-            <div className="text-center my-6 text-sm">
+            {upcomingMeetup ? (<div className="text-center my-6 text-sm">
               <span>Vergangenes Meetup verpasst? </span>
               <a href="/meetups" className="font-bold">
                 Zum Archiv
               </a>
-            </div>
+            </div>) : null}
           </div>
 
           <h2 className="text-3xl mt-6 mb-2">Social Media</h2>
